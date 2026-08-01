@@ -1,0 +1,461 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#07172d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo span{
+    color:#3b82f6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#3b82f6;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ==========================
+   Home
+========================== */
+
+.home{
+    min-height:100vh;
+    background:#08172e;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    color:white;
+}
+
+.home-text{
+    flex:1;
+}
+
+.home-text h3{
+    font-size:35px;
+}
+
+.home-text h1{
+    font-size:65px;
+    color:#3b82f6;
+    margin:10px 0;
+}
+
+.home-text h2{
+    font-size:38px;
+}
+
+.home-text p{
+    margin:25px 0;
+    line-height:32px;
+    max-width:600px;
+    color:#ddd;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+button{
+    padding:14px 30px;
+    border:none;
+    background:#3b82f6;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+}
+
+.project-btn{
+    background:#fff;
+    color:#2563eb;
+}
+
+.project-btn:hover{
+    background:#dbeafe;
+}
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    border:8px solid #3b82f6;
+    object-fit:cover;
+}
+
+/* ==========================
+   Section
+========================== */
+
+section{
+    padding:90px 8%;
+}
+
+.heading{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+    position:relative;
+}
+
+.heading::after{
+    content:'';
+    width:70px;
+    height:4px;
+    background:#3b82f6;
+    display:block;
+    margin:10px auto;
+    border-radius:5px;
+}
+
+/* ==========================
+   About
+========================== */
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:280px;
+    border-radius:50%;
+}
+
+.about-text{
+    flex:2;
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:35px;
+}
+
+/* ==========================
+   Skills
+========================== */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+}
+
+.skill-card{
+    background:#fff;
+    text-align:center;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.skill-card i{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.fa-html5{
+    color:#e44d26;
+}
+
+.fa-css3-alt{
+    color:#2965f1;
+}
+
+.fa-js{
+    color:#f0db4f;
+}
+
+.fa-python{
+    color:#3776ab;
+}
+
+.fa-react{
+    color:#61dafb;
+}
+
+.fa-database{
+    color:#16a34a;
+}
+
+.fa-server{
+    color:#7c3aed;
+}
+
+.fa-mobile-screen{
+    color:#ec4899;
+}
+
+/* ==========================
+   Projects
+========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:18px;
+}
+
+.project-card p{
+    padding:0 18px 18px;
+    line-height:28px;
+}
+
+.project-card a{
+    text-decoration:none;
+}
+
+.project-card button{
+    margin:0 18px 20px;
+}
+
+/* ==========================
+   Contact
+========================== */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.contact-box i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.contact-box h4{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#07172d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:991px){
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .home-image{
+        margin-bottom:40px;
+    }
+
+    .home-text p{
+        max-width:100%;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        background:#07172d;
+        transition:.4s;
+    }
+
+    nav.active{
+        left:0;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:20px 0;
+    }
+
+    .home-text h1{
+        font-size:45px;
+    }
+
+    .home-text h2{
+        font-size:28px;
+    }
+
+    .home-image img{
+        width:250px;
+        height:250px;
+    }
+
+    .heading{
+        font-size:32px;
+    }
+}
+
+@media(max-width:500px){
+
+    header{
+        padding:15px 5%;
+    }
+
+    .home{
+        padding:110px 5%;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    button{
+        width:220px;
+    }
+
+}

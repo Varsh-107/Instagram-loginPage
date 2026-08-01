@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            background-image:url("background.jpeg");
+            background-size: cover;
+            background-position:center;
+            background-attachment: fixed;
+        }
+        .special{
+            width:600px;
+            margin:40px auto;
+            padding:25px;
+            background:rgba(255,255,255,0.35);
+            border-radius:15px;
+            backdrop-filter:blur(5px);
+        }
+
+
+        .special input[type="text"],
+        .special input[type="password"],
+        .special input[type="date"],
+        .special input[type="file"],
+        .special select{
+            width:280px;      /* Same width for all text boxes */
+            height:35px;
+            border:2px solid rgba(11, 21, 66, 0.747);
+            border-radius:10px;
+            font-size:18px;
+            color:rgba(10,17,73,0.8);
+            padding-left:10px;
+        }
+
+        .special input[type="radio"],
+        .special input[type="checkbox"],
+        .special input[type="color"]{
+            width:auto;
+            height:auto;
+        }
+
+        button{
+            width:120px;
+            height:40px;
+            font-size:20px;
+            border-radius:8px;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="http://www.google.com/">
+        <center>
+        <div class="special">
+            <label for=""><B>username</B>
+            <input type="text">
+            </label><br><br>
+            <label for=""><B>Email</B>
+            <input type="text">
+            </label><br><br>
+            <label for=""><B>password</B>
+            <input type="password">
+            </label><br><br>
+            <label for=""><B>language</B>
+                <select name="" id="">
+                    <option value="">python</option>
+                    <option value="">mysql</option>
+                    <option value="">Javascript</option>
+                    <option value="">ReactJS</option>
+                </select>
+            </label><br><br>
+            <label for=""><B>date-of-birth</B>
+            <input type="date">
+            </label><br><br>
+            <label for=""><B>Gender</B>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+            </label><br><br>
+            <label for="">photo
+                <input type="file">
+            </label><br><br>
+            <label for="">
+                <input type="checkbox">
+                the details are exactly correct
+            </label><br><br>
+            <label for="">favourite colour
+                <input type="color">
+            </label><br>
+            <button>
+                <input type="button" value="submit">
+            </button><br><br>
+        </div>
+        </center>
+        </form>
+    </body>
+</html>
